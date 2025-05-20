@@ -20,6 +20,7 @@ spring:
   config:
     activate:
       on-profile: '!api-docs'
+
 springdoc:
   api-docs:
     enabled: false
@@ -33,6 +34,7 @@ eureka:
     register-with-eureka: true
     instance-info-replication-interval-seconds: 10
     registry-fetch-interval-seconds: 10
+
   instance:
     appname: curriculumservice
     instanceId: curriculumservice:${spring.application.instance-id:${random.value}}
